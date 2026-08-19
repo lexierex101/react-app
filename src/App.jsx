@@ -6,7 +6,7 @@ function App() {
 		<main>
 			<section className='container'>
 				<h3>{data.length} birthdays today.</h3>
-				<List people={data}/>
+				<List people={data} />
 			</section>
 		</main>
 	)
