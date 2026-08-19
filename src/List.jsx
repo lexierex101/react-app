@@ -1,11 +1,10 @@
 import React from 'react'
 
-const List = () => {
-	return (
-		<>
-			<h2>list component</h2>
-		</>
-	)
+const List = (props) => {
+	const { people } = props
+    return people.map((item) => {
+        return <p key={item.id}>{item.name}</p>
+	})
 }
 
 export default List
